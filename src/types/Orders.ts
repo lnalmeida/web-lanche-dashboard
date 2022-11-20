@@ -1,0 +1,15 @@
+
+export interface IOrder {
+  _id: string;
+  table: string;
+  status: string;
+  products: Array<{
+    _id: string;
+    quantity: number;
+    product: {
+      name: string;
+      imagePath: string;
+      price: number;
+    }
+  }>;
+}
