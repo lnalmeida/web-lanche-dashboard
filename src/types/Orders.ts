@@ -2,7 +2,7 @@
 export interface IOrder {
   _id: string;
   table: string;
-  status: string;
+  status: 'DONE' | 'IN_PRODUCTION' | 'WAITING';
   products: Array<{
     _id: string;
     quantity: number;
